@@ -1,17 +1,53 @@
-body {
-    background-color: #1E293B;
+:root {
+    --color-header: #2563EB;
+    --color-sidebar: #60A5FA;
+    --color-button-hover: #528acf;
+    --color-main-bar: white;
+    --color-text: black;
+    --color-side-text: navy;
+}
+
+:root.dark {
+    --color-header: #0f172a;
+    --color-sidebar: #1e293b;
+    --color-button-hover: #1a2433;
+    --color-main-bar: #111827;
+    --color-text: #e5e7eb;
+    --color-side-text: #000024;
+}
+
+html, body, #app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
 header {
+    background-color: var(--color-header);
     display: flex;
-    background-color: #2563EB;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.profile-image {
+    width: 15%;
+    max-width: 15%;
+    min-width: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--color-text);
+    flex-shrink: 0;
 }
 
 #header-text {
-    margin: 0 auto;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
 }
 
 #header-text p {
@@ -27,8 +63,8 @@ header h1 {
 }
 
 #main-page {
+    background-color: var(--color-main-bar);
     display: flex;
-    background-color: #FFFFFF;
 }
 
 #main-bar {
@@ -41,44 +77,50 @@ header h1 {
 
 #side-bar {
     flex: 0 0 15%;
-    background-color: #60A5FA;
+    background-color: var(--color-sidebar);
 }
 
 button {
+    background-color: var(--color-sidebar);
     display: block; 
     width: 100%;
     height: 100px;
     border: none;
     font-family: arial;
     font-size: 24px;
-    background-color: #60A5FA;
-    color: navy;
+    color: var(--color-side-text);
 }
 
 button:hover {
-    background-color: #528acf;
+    background-color: var(--color-button-hover)
 }
 
-img {
-    width: 15%;
-    border-radius: 50%;
-    border: 1px solid black
+.theme-icon:hover {
+    background-color: var(--color-button-hover)
+}
+
+#icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    padding: 5px;
 }
 
 p {
     font-size: 18px;
     font-family: arial;
-    color: black;
+    color: var(--color-text);
 }
 
 h1 {
     font-family: arial;
-    color: black;
+    color: var(--color-text);
 }
 
 h2 {
     font-family: arial;
-    color: black;
+    color: var(--color-text);
 }
 
 .job-title {
