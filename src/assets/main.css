@@ -9,11 +9,11 @@
 
 :root.dark {
     --color-header: #0f172a;
-    --color-sidebar: #1e293b;
+    --color-sidebar: #0d1525;
     --color-button-hover: #1a2433;
     --color-main-bar: #111827;
     --color-text: #e5e7eb;
-    --color-side-text: #000024;
+    --color-side-text: #9ac7ff;
 }
 
 html, body, #app {
