@@ -80,16 +80,6 @@ header h1 {
     background-color: var(--color-sidebar);
 }
 
-footer {
-    background-color: var(--color-header);
-    padding: 20px 0;
-}
-
-footer p {
-    text-align: center;
-    margin: auto;
-}
-
 button {
     background-color: var(--color-sidebar);
     display: block; 
