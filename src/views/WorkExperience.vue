@@ -50,16 +50,20 @@
             </div>
         </div>
     </div>
+    <Footer />
 </template>
 
 <script>
 import Header from "../components/Header.vue"
-import Sidebar from "../components/Sidebar.vue";
+import Sidebar from "../components/Sidebar.vue"
+import Footer from "../components/Footer.vue"
+
 export default {
     name: "App",
     components: {
         Header,
-        Sidebar
+        Sidebar,
+        Footer,
     }
 }
 </script>
