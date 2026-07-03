@@ -1,6 +1,7 @@
 <template>
     <footer>
         <p>Richard Fousek 2026</p>
+        <p>fousekrichard(at)gmail.com</p>
     </footer>
 </template>
 
