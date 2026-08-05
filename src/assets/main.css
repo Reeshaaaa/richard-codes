@@ -113,6 +113,10 @@ p {
     color: var(--color-text);
 }
 
+li {
+    color: var(--color-text)
+}
+
 h1 {
     font-family: arial;
     color: var(--color-text);
